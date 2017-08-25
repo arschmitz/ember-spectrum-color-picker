@@ -9,9 +9,11 @@ module.exports = {
   options: {
     nodeAssets: {
       'spectrum-colorpicker': {
-        vendor: ['spectrum.js', 'spectrum.css'],
-        processTree(input) {
-          return fastbootTransform(input);
+        vendor: {
+          include: ['spectrum.js', 'spectrum.css'],
+          processTree(input) {
+            return fastbootTransform(input);
+          }
         }
       }
     }
