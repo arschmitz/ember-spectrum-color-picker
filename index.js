@@ -1,6 +1,8 @@
 /* eslint-env node */
 'use strict';
 
+var fastbootTransform = require('fastboot-transform');
+
 module.exports = {
   name: 'ember-spectrum-color-picker',
 
